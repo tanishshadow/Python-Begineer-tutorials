@@ -37,12 +37,12 @@ m4edit.add_command(label="Undo")
 m4edit.add_command(label="Redo")
 main.add_cascade(label="Edit",menu=m4edit)
 root.config(menu=main)
-
+# Problem here--------
 hp = Menu(main,tearoff="0")
 hp.add_command(label="Help",command="helpp")
 main.add_cascade(label="Help", menu=hp)
 
 root.config(menu=main)
-
+# --------
 root.configure(bg="grey")
 root.mainloop()
